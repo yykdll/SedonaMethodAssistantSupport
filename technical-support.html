@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Support - SedonaMethodAssistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: white;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .app-name {
+            color: #667eea;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+
+        h2 {
+            color: #34495e;
+            font-size: 1.5em;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        h3 {
+            color: #2c3e50;
+            font-size: 1.2em;
+            margin: 20px 0 10px 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .faq-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 4px solid #667eea;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .faq-answer {
+            color: #555;
+            margin-bottom: 0;
+        }
+
+        .contact-section {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .contact-method {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-method h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .system-requirements {
+            background: #e8f4fd;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 1px solid #bee5eb;
+        }
+
+        .troubleshooting-steps {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 1px solid #ffeaa7;
+        }
+
+        .warning {
+            background: #f8d7da;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+
+        .success {
+            background: #d4edda;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #667eea;
+        }
+
+        .feature-card h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .app-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 24px;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="app-icon">S</div>
+            <h1>Technical Support</h1>
+            <div class="app-name">SedonaMethodAssistant</div>
+        </div>
+
+        <div class="contact-section">
+            <h2 style="margin-top: 0; border: none; color: #2c3e50;">Need Help? We're Here for You</h2>
+            <p>Our support team is dedicated to helping you get the most out of your Sedona Method practice.</p>
+        </div>
+
+        <h2>System Requirements</h2>
+        <div class="system-requirements">
+            <h3>Minimum Requirements</h3>
+            <ul>
+                <li><strong>iOS Version:</strong> iOS 14.0 or later</li>
+                <li><strong>Device:</strong> iPhone 8 or newer, iPad (6th generation) or newer</li>
+                <li><strong>Storage:</strong> 50 MB available space</li>
+                <li><strong>RAM:</strong> 2 GB or more recommended</li>
+            </ul>
+            
+            <h3>Recommended for Best Experience</h3>
+            <ul>
+                <li><strong>iOS Version:</strong> iOS 15.0 or later</li>
+                <li><strong>Device:</strong> iPhone 12 or newer, iPad Air (4th generation) or newer</li>
+                <li><strong>Audio:</strong> Headphones or speakers for audio guidance features</li>
+            </ul>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: How do I start my first release session?</div>
+            <div class="faq-answer">A: Tap the "Release" tab at the bottom, enter what you want to release in the text field, then tap "Start Release". The app will guide you through each step of the process.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Can I change the app language?</div>
+            <div class="faq-answer">A: Yes! Go to the "Profile" tab and look for language settings. You can switch between English and Simplified Chinese. The app will automatically detect your system language on first launch.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Where is my release history stored?</div>
+            <div class="faq-answer">A: All your release sessions are stored locally on your device for privacy. You can view your history in the "Profile" tab. Your data is never sent to external servers.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: What are the achievement levels and how do I progress?</div>
+            <div class="faq-answer">A: The app includes 15 achievement levels from "Newcomer" to "Liberated". You progress by completing release sessions consistently. Each level requires more releases and represents deeper mastery of the Sedona Method.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Can I edit or delete past release sessions?</div>
+            <div class="faq-answer">A: Yes, you can edit release goals and delete individual sessions from your history. Go to "Profile" → "Release History" and tap on any session to see editing options.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: What should I do if the app crashes or freezes?</div>
+            <div class="faq-answer">A: First, try force-closing and reopening the app. If problems persist, restart your device. Your data is automatically saved, so you won't lose your progress.</div>
+        </div>
+
+        <h2>Troubleshooting Common Issues</h2>
+
+        <div class="troubleshooting-steps">
+            <h3>App Won't Open or Crashes on Launch</h3>
+            <ol>
+                <li>Force close the app by double-tapping the home button and swiping up on SedonaMethodAssistant</li>
+                <li>Restart your device</li>
+                <li>Ensure you have the latest version from the App Store</li>
+                <li>Check available storage space (need at least 100MB free)</li>
+                <li>If issues persist, try deleting and reinstalling the app</li>
+            </ol>
+            
+            <div class="warning">
+                <strong>Note:</strong> Reinstalling the app will delete all your local data. Consider this only as a last resort.
+            </div>
+        </div>
+
+        <div class="troubleshooting-steps">
+            <h3>Release Sessions Not Saving</h3>
+            <ol>
+                <li>Ensure you complete the entire release process</li>
+                <li>Check that you have sufficient storage space</li>
+                <li>Restart the app and try again</li>
+                <li>Verify iOS version compatibility</li>
+            </ol>
+        </div>
+
+        <div class="troubleshooting-steps">
+            <h3>Language Not Changing</h3>
+            <ol>
+                <li>Go to Profile → Language Settings</li>
+                <li>Select your preferred language</li>
+                <li>Force close and reopen the app</li>
+                <li>If still not working, check your device's system language settings</li>
+            </ol>
+        </div>
+
+        <h2>App Features Guide</h2>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h4>Release Process</h4>
+                <p>Guided 8-step release sessions with emotion identification, desire categorization, and completion tracking.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h4>Six Steps Theory</h4>
+                <p>Complete Sedona Method theory and practice guidelines based on the original 1992 methodology.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h4>Progress Tracking</h4>
+                <p>Visual charts, statistics, and achievement system to monitor your emotional wellness journey.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h4>History Management</h4>
+                <p>View, edit, and manage all your past release sessions with detailed records and insights.</p>
+            </div>
+        </div>
+
+        <h2>Contact Support</h2>
+
+        <div class="contact-method">
+            <h4>📧 Email Support</h4>
+            <p><strong>544736399@qq.com</strong></p>
+            <p>Response time: Within 24 hours</p>
+            <p>Best for: Technical issues, feature requests, detailed questions</p>
+        </div>
+
+        <div class="contact-method">
+            <h4>🚀 Priority Support</h4>
+            <p><strong>urgent@sedonamethodassistant.com</strong></p>
+            <p>Response time: Within 4 hours</p>
+            <p>Best for: App crashes, data loss, critical functionality issues</p>
+        </div>
+
+        <div class="contact-method">
+            <h4>💬 General Inquiries</h4>
+            <p><strong>hello@sedonamethodassistant.com</strong></p>
+            <p>Response time: Within 48 hours</p>
+            <p>Best for: General questions, feedback, suggestions</p>
+        </div>
+
+        <h2>When Contacting Support</h2>
+
+        <p>To help us assist you more effectively, please include:</p>
+        <ul>
+            <li><strong>Device Model:</strong> (e.g., iPhone 14, iPad Air)</li>
+            <li><strong>iOS Version:</strong> (Settings → General → About)</li>
+            <li><strong>App Version:</strong> (Available in Profile tab)</li>
+            <li><strong>Issue Description:</strong> What happened and when</li>
+            <li><strong>Steps to Reproduce:</strong> What you were doing when the issue occurred</li>
+            <li><strong>Screenshots:</strong> If applicable, visual evidence helps</li>
+        </ul>
+
+        <h2>App Updates</h2>
+
+        <div class="success">
+            <p><strong>Stay Updated:</strong> We regularly release updates with new features, improvements, and bug fixes. Enable automatic updates in your App Store settings to get the latest version.</p>
+        </div>
+
+        <p>Update notifications include:</p>
+        <ul>
+            <li>New features and enhancements</li>
+            <li>Performance improvements</li>
+            <li>Bug fixes and stability improvements</li>
+            <li>Additional language support</li>
+            <li>New achievement levels and rewards</li>
+        </ul>
+
+        <h2>Privacy & Data</h2>
+
+        <p>Your privacy is our priority:</p>
+        <ul>
+            <li>All data is stored locally on your device</li>
+            <li>No personal information is transmitted to our servers</li>
+            <li>Support requests may include technical data to help diagnose issues</li>
+            <li>We never access your release session content</li>
+        </ul>
+
+        <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ecf0f1; color: #7f8c8d;">
+            <p>Thank you for using SedonaMethodAssistant</p>
+            <p>Version 1.0 | Last Updated: October 23, 2025</p>
+        </div>
+    </div>
+</body>
+</body>
+</html>
